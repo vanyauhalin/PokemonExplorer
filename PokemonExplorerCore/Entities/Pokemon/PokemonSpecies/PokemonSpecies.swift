@@ -95,7 +95,7 @@ struct PokemonSpecies: Codable {
   /// The shape of this Pokémon for Pokédex search.
   let shape: NamedAPIResource<PokemonShape>
 
-  /// The Pokémon species that evolves into this Pokemon_species.
+  /// The Pokémon species that evolves into this Pokemon\_species.
   let evolvesFromSpecies: NamedAPIResource<PokemonSpecies>
 
   /// The evolution chain this Pokémon species is a member of.
