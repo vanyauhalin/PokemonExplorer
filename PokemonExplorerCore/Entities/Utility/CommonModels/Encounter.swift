@@ -1,0 +1,29 @@
+/// `Encounter`.
+///
+/// Up-to-date documentation can be found one the
+/// [website](https://pokeapi.co/docs/v2#encounter).
+struct Encounter: Codable {
+  enum CodingKeys: String, CodingKey {
+    case minLevel = "min_level"
+    case maxLevel = "max_level"
+    case conditionValues = "condition_values"
+    case chance
+    case method
+  }
+
+  /// The lowest level the Pokémon could be encountered at.
+  let minLevel: Int
+
+  /// The highest level the Pokémon could be encountered at.
+  let maxLevel: Int
+
+  /// A list of condition values that must be in effect for this encounter to
+  /// occur.
+  let conditionValues: NamedAPIResource<EncounterConditionValue>
+
+  /// Percent chance that this encounter will occur.
+  let chance: Int
+
+  /// The method by which this encounter happens.
+  let method: NamedAPIResource<EncounterMethod>
+}
