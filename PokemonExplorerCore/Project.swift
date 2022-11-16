@@ -14,7 +14,7 @@ let project = Project(
       infoPlist: .configure(),
       sources: .configure(),
       scripts: [
-        .lintProject()
+        .lintProject(by: "Core")
       ]
     )
   ]
