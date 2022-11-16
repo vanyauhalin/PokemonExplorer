@@ -3,12 +3,6 @@
 /// Up-to-date documentation can be found one the
 /// [website](https://pokeapi.co/docs/v2#palparkencounterspecies).
 struct PalParkEncounterSpecies: Codable {
-  enum CodingKeys: String, CodingKey {
-    case baseScore = "base_score"
-    case rate
-    case pokemonSpecies = "pokemon_species"
-  }
-
   /// The base score given to the player when this Pokémon is caught during a
   /// pal park run.
   let baseScore: Int

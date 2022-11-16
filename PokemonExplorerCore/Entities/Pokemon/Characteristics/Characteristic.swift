@@ -7,12 +7,6 @@
 /// Up-to-date documentation can be found one the
 /// [website](https://pokeapi.co/docs/v2#characteristic).
 struct Characteristic: Codable {
-  enum CodingKeys: String, CodingKey {
-    case id
-    case geneModulo = "gene_modulo"
-    case possibleValues = "possible_values"
-  }
-
   /// The identifier for this resource.
   let id: Int
 

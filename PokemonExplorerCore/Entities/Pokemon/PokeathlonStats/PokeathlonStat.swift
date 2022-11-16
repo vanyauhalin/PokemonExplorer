@@ -7,13 +7,6 @@
 /// Up-to-date documentation can be found one the
 /// [website](https://pokeapi.co/docs/v2#pokeathlonstat).
 struct PokeathlonStat: Codable {
-  enum CodingKeys: String, CodingKey {
-    case id
-    case name
-    case names
-    case affectingNatures = "affecting_natures"
-  }
-
   /// The identifier for this resource.
   let id: Int
 

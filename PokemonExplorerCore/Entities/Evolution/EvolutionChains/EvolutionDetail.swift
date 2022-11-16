@@ -3,27 +3,6 @@
 /// Up-to-date documentation can be found one the
 /// [website](https://pokeapi.co/docs/v2#evolutiondetail).
 struct EvolutionDetail: Codable {
-  enum CodingKeys: String, CodingKey {
-    case item
-    case trigger
-    case gender
-    case heldItem = "held_item"
-    case knownMove = "known_move"
-    case knownMoveType = "known_move_type"
-    case location
-    case minLevel = "min_level"
-    case minHappiness = "min_happiness"
-    case minBeauty = "min_beauty"
-    case minAffection = "min_affection"
-    case needsOverworldRain = "needs_overworld_rain"
-    case partySpecies = "party_species"
-    case partyType = "party_type"
-    case relativePhysicalStats = "relative_physical_stats"
-    case timeOfDay = "time_of_day"
-    case tradeSpecies = "trade_species"
-    case turnUpsideDown = "turn_upside_down"
-  }
-
   /// The item required to cause evolution this into Pokémon species.
   let item: NamedAPIResource<Item>
 

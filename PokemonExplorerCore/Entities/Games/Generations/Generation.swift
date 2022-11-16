@@ -6,18 +6,6 @@
 /// Up-to-date documentation can be found one the
 /// [website](https://pokeapi.co/docs/v2#generation).
 struct Generation: Codable {
-  enum CodingKeys: String, CodingKey {
-    case id
-    case name
-    case abilities
-    case names
-    case mainRegion = "main_region"
-    case moves
-    case pokemonSpecies = "pokemon_species"
-    case types
-    case versionGroups = "version_groups"
-  }
-
   /// The identifier for this resource.
   let id: Int
 

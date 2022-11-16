@@ -4,13 +4,6 @@
 /// Up-to-date documentation can be found one the
 /// [website](https://pokeapi.co/docs/v2#supercontesteffect).
 struct SuperContestEffect: Codable {
-  enum CodingKeys: String, CodingKey {
-    case id
-    case appeal
-    case flavorTextEntries = "flavor_text_entries"
-    case moves
-  }
-
   /// The identifier for this resource.
   let id: Int
 

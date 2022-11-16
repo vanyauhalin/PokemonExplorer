@@ -3,21 +3,6 @@
 /// Up-to-date documentation can be found one the
 /// [website](https://pokeapi.co/docs/v2#movemetadata).
 struct MoveMetaData: Codable {
-  enum CodingKeys: String, CodingKey {
-    case ailment
-    case category
-    case minHits = "min_hits"
-    case maxHits = "max_hits"
-    case minTurns = "min_turns"
-    case maxTurns = "max_turns"
-    case drain
-    case healing
-    case critRate = "crit_rate"
-    case ailmentChance = "ailment_chance"
-    case flinchChance = "flinch_chance"
-    case statChance = "stat_chance"
-  }
-
   /// The status ailment this move inflicts on its target.
   let ailment: NamedAPIResource<MoveAilment>
 
@@ -35,7 +20,7 @@ struct MoveMetaData: Codable {
   /// The minimum number of turns this move continues to take effect. Null if it
   /// always only lasts one turn.
   let minTurns: Int
-  
+
   /// The maximum number of turns this move continues to take effect. Null if it
   /// always only lasts one turn.
   let maxTurns: Int

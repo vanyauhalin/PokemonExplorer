@@ -3,12 +3,6 @@
 /// Up-to-date documentation can be found one the
 /// [website](https://pokeapi.co/docs/v2#abilitypokemon).
 struct AbilityPokemon: Codable {
-  enum CodingKeys: String, CodingKey {
-    case isHidden = "is_hidden"
-    case slot
-    case pokemon
-  }
-
   /// Whether or not this a hidden ability for the referenced Pokémon.
   let isHidden: Bool
 

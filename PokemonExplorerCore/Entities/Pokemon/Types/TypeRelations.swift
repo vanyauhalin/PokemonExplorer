@@ -3,15 +3,6 @@
 /// Up-to-date documentation can be found one the
 /// [website](https://pokeapi.co/docs/v2#typerelations).
 struct TypeRelations: Codable {
-  enum CodingKeys: String, CodingKey {
-    case noDamageTo = "no_damage_to"
-    case halfDamageTo = "half_damage_to"
-    case doubleDamageTo = "double_damage_to"
-    case noDamageFrom = "no_damage_from"
-    case halfDamageFrom = "half_damage_from"
-    case doubleDamageFrom = "double_damage_from"
-  }
-
   /// A list of types this type has no effect on.
   let noDamageTo: [NamedAPIResource<PType>]
 

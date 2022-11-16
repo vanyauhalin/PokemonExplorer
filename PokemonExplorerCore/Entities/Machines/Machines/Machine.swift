@@ -5,13 +5,6 @@
 /// Up-to-date documentation can be found one the
 /// [website](https://pokeapi.co/docs/v2#machine).
 struct Machine: Codable {
-  enum CodingKeys: String, CodingKey {
-    case id
-    case item
-    case move
-    case versionGroup = "version_group"
-  }
-
   /// The identifier for this resource.
   let id: Int
 

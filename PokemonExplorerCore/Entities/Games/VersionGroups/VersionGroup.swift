@@ -3,17 +3,6 @@
 /// Up-to-date documentation can be found one the
 /// [website](https://pokeapi.co/docs/v2#versiongroup).
 struct VersionGroup: Codable {
-  enum CodingKeys: String, CodingKey {
-    case id
-    case name
-    case order
-    case generation
-    case moveLearnMethods = "move_learn_methods"
-    case pokedexes
-    case regions
-    case versions
-  }
-
   /// The identifier for this resource.
   let id: Int
 

@@ -6,18 +6,6 @@
 /// Up-to-date documentation can be found one the
 /// [website](https://pokeapi.co/docs/v2#ability).
 struct Ability: Codable {
-  enum CodingKeys: String, CodingKey {
-    case id
-    case name
-    case isMainSeries = "is_main_series"
-    case generation
-    case names
-    case effectEntries = "effect_entries"
-    case effectChanges = "effect_changes"
-    case flavorTextEntries = "flavor_text_entries"
-    case pokemon
-  }
-
   /// The identifier for this resource.
   let id: Int
 

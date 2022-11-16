@@ -7,21 +7,6 @@
 /// Up-to-date documentation can be found one the
 /// [website](https://pokeapi.co/docs/v2#berry).
 struct Berry: Codable {
-  enum CodingKeys: String, CodingKey {
-    case id
-    case name
-    case growthTime = "growth_time"
-    case maxHarvest = "max_harvest"
-    case naturalGiftPower = "natural_gift_power"
-    case size
-    case smoothness
-    case soilDryness = "soil_dryness"
-    case firmness
-    case flavors
-    case item
-    case naturalGiftType = "natural_gift_type"
-  }
-
   /// The identifier for this resource.
   let id: Int
 

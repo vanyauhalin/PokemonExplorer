@@ -5,16 +5,6 @@
 /// Up-to-date documentation can be found one the
 /// [website](https://pokeapi.co/docs/v2#region).
 struct Region: Codable {
-  enum CodingKeys: String, CodingKey {
-    case id
-    case locations
-    case name
-    case names
-    case mainGeneration = "main_generation"
-    case pokedexes
-    case versionGroups = "version_groups"
-  }
-
   /// The identifier for this resource.
   let id: Int
 

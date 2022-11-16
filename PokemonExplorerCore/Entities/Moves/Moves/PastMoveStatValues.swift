@@ -3,16 +3,6 @@
 /// Up-to-date documentation can be found one the
 /// [website](https://pokeapi.co/docs/v2#pastmovestatvalues).
 struct PastMoveStatValues: Codable {
-  enum CodingKeys: String, CodingKey {
-    case accuracy
-    case effectChance = "effect_chance"
-    case power
-    case pp
-    case effectEntries = "effect_entries"
-    case type
-    case versionGroup = "version_group"
-  }
-
   /// The percent value of how likely this move is to be successful.
   let accuracy: Int
 

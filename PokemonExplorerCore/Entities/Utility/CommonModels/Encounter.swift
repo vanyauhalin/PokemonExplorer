@@ -3,14 +3,6 @@
 /// Up-to-date documentation can be found one the
 /// [website](https://pokeapi.co/docs/v2#encounter).
 struct Encounter: Codable {
-  enum CodingKeys: String, CodingKey {
-    case minLevel = "min_level"
-    case maxLevel = "max_level"
-    case conditionValues = "condition_values"
-    case chance
-    case method
-  }
-
   /// The lowest level the Pokémon could be encountered at.
   let minLevel: Int
 

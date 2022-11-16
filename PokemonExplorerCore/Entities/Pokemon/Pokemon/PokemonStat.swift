@@ -3,12 +3,6 @@
 /// Up-to-date documentation can be found one the
 /// [website](https://pokeapi.co/docs/v2#pokemonstat).
 struct PokemonStat: Codable {
-  enum CodingKeys: String, CodingKey {
-    case stat
-    case effort
-    case baseStat = "base_stat"
-  }
-
   /// The stat the Pokémon has.
   let stat: NamedAPIResource<Stat>
 

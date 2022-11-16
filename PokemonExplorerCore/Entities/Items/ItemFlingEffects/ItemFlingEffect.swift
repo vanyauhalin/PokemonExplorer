@@ -3,13 +3,6 @@
 /// Up-to-date documentation can be found one the
 /// [website](https://pokeapi.co/docs/v2#itemflingeffect).
 struct ItemFlingEffect: Codable {
-  enum CodingKeys: String, CodingKey {
-    case id
-    case name
-    case effectEntries = "effect_entries"
-    case items
-  }
-
   /// The identifier for this resource.
   let id: Int
 

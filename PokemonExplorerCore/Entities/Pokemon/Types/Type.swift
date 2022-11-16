@@ -6,19 +6,6 @@
 /// Up-to-date documentation can be found one the
 /// [website](https://pokeapi.co/docs/v2#type).
 struct PType: Codable {
-  enum CodingKeys: String, CodingKey {
-    case id
-    case name
-    case damageRelations = "damage_relations"
-    case pastDamageRelations = "past_damage_relations"
-    case gameIndices = "game_indices"
-    case generation
-    case moveDamageClass = "move_damage_class"
-    case names
-    case pokemon
-    case moves
-  }
-
   /// The identifier for this resource.
   let id: Int
 

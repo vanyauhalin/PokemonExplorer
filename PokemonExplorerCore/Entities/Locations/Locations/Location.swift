@@ -4,15 +4,6 @@
 /// Up-to-date documentation can be found one the
 /// [website](https://pokeapi.co/docs/v2#location).
 struct Location: Codable {
-  enum CodingKeys: String, CodingKey {
-    case id
-    case name
-    case region
-    case names
-    case gameIndices = "game_indices"
-    case areas
-  }
-
   /// The identifier for this resource.
   let id: Int
 

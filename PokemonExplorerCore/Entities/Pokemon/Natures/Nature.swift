@@ -5,18 +5,6 @@
 /// Up-to-date documentation can be found one the
 /// [website](https://pokeapi.co/docs/v2#nature).
 struct Nature: Codable {
-  enum CodingKeys: String, CodingKey {
-    case id
-    case name
-    case decreasedStat = "decreased_stat"
-    case increasedStat = "increased_stat"
-    case hatesFlavor = "hates_flavor"
-    case likesFlavor = "likes_flavor"
-    case pokeathlonStatChanges = "pokeathlon_stat_changes"
-    case moveBattleStylePreferences = "move_battle_style_preferences"
-    case names
-  }
-
   /// The identifier for this resource.
   let id: Int
 

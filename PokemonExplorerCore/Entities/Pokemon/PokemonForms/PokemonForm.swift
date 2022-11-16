@@ -6,23 +6,6 @@
 /// Up-to-date documentation can be found one the
 /// [website](https://pokeapi.co/docs/v2#pokemonform).
 struct PokemonForm: Codable {
-  enum CodingKeys: String, CodingKey {
-    case id
-    case name
-    case order
-    case formOrder = "form_order"
-    case isDefault = "is_default"
-    case isBattleOnly = "is_battle_only"
-    case isMega = "is_mega"
-    case formName = "form_name"
-    case pokemon
-    case types
-    case sprites
-    case versionGroup = "version_group"
-    case names
-    case formNames = "form_names"
-  }
-
   /// The identifier for this resource.
   let id: Int
 

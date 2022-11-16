@@ -9,27 +9,6 @@
 /// Up-to-date documentation can be found one the
 /// [website](https://pokeapi.co/docs/v2#pokemon).
 struct Pokemon: Codable {
-  enum CodingKeys: String, CodingKey {
-    case id
-    case name
-    case baseExperience = "base_experience"
-    case height
-    case isDefault = "is_default"
-    case order
-    case weight
-    case abilities
-    case forms
-    case gameIndices = "game_indices"
-    case heldItems = "held_items"
-    case locationAreaEncounters = "location_area_encounters"
-    case moves
-    case pastTypes = "past_types"
-    case sprites
-    case species
-    case stats
-    case types
-  }
-
   /// The identifier for this resource.
   let id: Int
 

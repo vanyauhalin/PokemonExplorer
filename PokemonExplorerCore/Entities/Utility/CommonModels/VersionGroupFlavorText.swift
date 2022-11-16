@@ -3,12 +3,6 @@
 /// Up-to-date documentation can be found one the
 /// [website](https://pokeapi.co/docs/v2#versiongroupflavortext).
 struct VersionGroupFlavorText: Codable {
-  enum CodingKeys: String, CodingKey {
-    case text
-    case language
-    case versionGroup = "version_group"
-  }
-
   /// The localized name for an API resource in a specific language.
   let text: String
 

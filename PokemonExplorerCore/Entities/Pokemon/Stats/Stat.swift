@@ -5,18 +5,6 @@
 /// Up-to-date documentation can be found one the
 /// [website](https://pokeapi.co/docs/v2#stat).
 struct Stat: Codable {
-  enum CodingKeys: String, CodingKey {
-    case id
-    case name
-    case gameIndex = "game_index"
-    case isBattleOnly = "is_battle_only"
-    case affectingMoves = "affecting_moves"
-    case affectingNatures = "affecting_natures"
-    case characteristics
-    case moveDamageClass = "move_damage_class"
-    case names
-  }
-
   /// The identifier for this resource.
   let id: Int
 

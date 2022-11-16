@@ -4,16 +4,6 @@
 /// Up-to-date documentation can be found one the
 /// [website](https://pokeapi.co/docs/v2#locationarea).
 struct LocationArea: Codable {
-  enum CodingKeys: String, CodingKey {
-    case id
-    case name
-    case gameIndex = "game_index"
-    case encounterMethodRates = "encounter_method_rates"
-    case location
-    case names
-    case pokemonEncounters = "pokemon_encounters"
-  }
-
   /// The identifier for this resource.
   let id: Int
 

@@ -3,14 +3,6 @@
 /// Up-to-date documentation can be found one the
 /// [website](https://pokeapi.co/docs/v2#movelearnmethod).
 struct MoveLearnMethod: Codable {
-  enum CodingKeys: String, CodingKey {
-    case id
-    case name
-    case descriptions
-    case names
-    case versionGroups = "version_groups"
-  }
-
   /// The identifier for this resource.
   let id: Int
 

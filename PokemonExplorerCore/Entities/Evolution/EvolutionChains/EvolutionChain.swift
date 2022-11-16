@@ -5,12 +5,6 @@
 /// Up-to-date documentation can be found one the
 /// [website](https://pokeapi.co/docs/v2#evolutionchain).
 struct EvolutionChain: Codable {
-  enum CodingKeys: String, CodingKey {
-    case id
-    case babyTriggerItem = "baby_trigger_item"
-    case chain
-  }
-
   /// The identifier for this resource.
   let id: Int
 

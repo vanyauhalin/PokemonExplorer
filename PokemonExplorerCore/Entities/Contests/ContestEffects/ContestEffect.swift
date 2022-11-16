@@ -3,14 +3,6 @@
 /// Up-to-date documentation can be found one the
 /// [website](https://pokeapi.co/docs/v2#contesteffect).
 struct ContestEffect: Codable {
-  enum CodingKeys: String, CodingKey {
-    case id
-    case appeal
-    case jam
-    case effectEntries = "effect_entries"
-    case flavorTextEntries = "flavor_text_entries"
-  }
-
   /// The identifier for this resource.
   let id: Int
 

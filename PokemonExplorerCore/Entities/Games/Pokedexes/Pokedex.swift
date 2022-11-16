@@ -8,17 +8,6 @@
 /// Up-to-date documentation can be found one the
 /// [website](https://pokeapi.co/docs/v2#pokedex).
 struct Pokedex: Codable {
-  enum CodingKeys: String, CodingKey {
-    case id
-    case name
-    case isMainSeries = "is_main_series"
-    case descriptions
-    case names
-    case pokemonEntries = "pokemon_entries"
-    case region
-    case versionGroups = "version_groups"
-  }
-
   /// The identifier for this resource.
   let id: Int
 

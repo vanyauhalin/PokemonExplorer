@@ -6,13 +6,6 @@
 /// Up-to-date documentation can be found one the
 /// [website](https://pokeapi.co/docs/v2#contesttype).
 struct ContestType: Codable {
-  enum CodingKeys: String, CodingKey {
-    case id
-    case name
-    case berryFlavor = "berry_flavor"
-    case names
-  }
-
   /// The identifier for this resource.
   let id: Int
 
