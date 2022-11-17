@@ -2,29 +2,29 @@
 ///
 /// Up-to-date documentation can be found one the
 /// [website](https://pokeapi.co/docs/v2#versiongroup).
-struct VersionGroup: Codable {
+public struct VersionGroup: Codable {
   /// The identifier for this resource.
-  let id: Int
+  public let id: Int
 
   /// The name for this resource.
-  let name: String
+  public let name: String
 
   /// Order for sorting. Almost by date of release, except similar versions are
   /// grouped together.
-  let order: Int
+  public let order: Int
 
   /// The generation this version was introduced in.
-  let generation: NamedAPIResource<Generation>
+  public let generation: NamedAPIResource<Generation>
 
   /// A list of methods in which Pokémon can learn moves in this version group.
-  let moveLearnMethods: [NamedAPIResource<MoveLearnMethod>]
+  public let moveLearnMethods: [NamedAPIResource<MoveLearnMethod>]
 
   /// A list of Pokédexes introduces in this version group.
-  let pokedexes: [NamedAPIResource<Pokedex>]
+  public let pokedexes: [NamedAPIResource<Pokedex>]
 
   /// A list of regions that can be visited in this version group.
-  let regions: [NamedAPIResource<Region>]
+  public let regions: [NamedAPIResource<Region>]
 
   /// The versions this version group owns.
-  let versions: [NamedAPIResource<Version>]
+  public let versions: [NamedAPIResource<Version>]
 }

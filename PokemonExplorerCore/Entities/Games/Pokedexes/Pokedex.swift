@@ -7,29 +7,28 @@
 ///
 /// Up-to-date documentation can be found one the
 /// [website](https://pokeapi.co/docs/v2#pokedex).
-struct Pokedex: Codable {
+public struct Pokedex: Codable {
   /// The identifier for this resource.
-  let id: Int
+  public let id: Int
 
   /// The name for this resource.
-  let name: String
+  public let name: String
 
   /// Whether or not this Pokédex originated in the main series of the video games.
-  let isMainSeries: Bool
+  public let isMainSeries: Bool
 
   /// The description of this resource listed in different languages.
-  let descriptions: [Description]
+  public let descriptions: [Description]
 
   /// The name of this resource listed in different languages.
-  let names: [Name]
+  public let names: [Name]
 
   /// A list of Pokémon catalogued in this Pokédex and their indexes.
-  let pokemonEntries: [PokemonEntry]
+  public let pokemonEntries: [PokemonEntry]
 
   /// The region this Pokédex catalogues Pokémon for.
-  let region: NamedAPIResource<Region>
+  public let region: NamedAPIResource<Region>
 
   /// A list of version groups this Pokédex is relevant to.
-  let versionGroups: [NamedAPIResource<VersionGroup>]
+  public let versionGroups: [NamedAPIResource<VersionGroup>]
 }
-

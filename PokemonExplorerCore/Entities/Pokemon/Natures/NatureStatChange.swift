@@ -2,10 +2,10 @@
 ///
 /// Up-to-date documentation can be found one the
 /// [website](https://pokeapi.co/docs/v2#naturestatchange).
-struct NatureStatChange: Codable {
+public struct NatureStatChange: Codable {
   /// The amount of change.
-  let maxChange: Int
+  public let maxChange: Int
 
   /// The stat being affected.
-  let pokeathlonStat: NamedAPIResource<PokeathlonStat>
+  public let pokeathlonStat: NamedAPIResource<PokeathlonStat>
 }

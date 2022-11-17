@@ -6,94 +6,94 @@
 ///
 /// Up-to-date documentation can be found one the
 /// [website](https://pokeapi.co/docs/v2#pokemonspecies).
-struct PokemonSpecies: Codable {
+public struct PokemonSpecies: Codable {
   /// The identifier for this resource.
-  let id: Int
+  public let id: Int
 
   /// The name for this resource.
-  let name: String
+  public let name: String
 
   /// The order in which species should be sorted. Based on National Dex order,
   /// except families are grouped together and sorted by stage.
-  let order: Int
+  public let order: Int
 
   /// The chance of this Pokémon being female, in eighths; or -1 for genderless.
-  let genderRate: Int
+  public let genderRate: Int
 
   /// The base capture rate; up to 255. The higher the number, the easier the
   /// catch.
-  let captureRate: Int
+  public let captureRate: Int
 
   /// The happiness when caught by a normal Pokéball; up to 255. The higher the
   /// number, the happier the Pokémon.
-  let baseHappiness: Int
+  public let baseHappiness: Int
 
   /// Whether or not this is a baby Pokémon.
-  let isBaby: Bool
+  public let isBaby: Bool
 
   /// Whether or not this is a legendary Pokémon.
-  let isLegendary: Bool
+  public let isLegendary: Bool
 
   /// Whether or not this is a mythical Pokémon.
-  let isMythical: Bool
+  public let isMythical: Bool
 
   /// Initial hatch counter: one must walk 255 × (hatch\_counter + 1) steps
   /// before this Pokémon's egg hatches, unless utilizing bonuses like Flame
   /// Body's.
-  let hatchCounter: Int
+  public let hatchCounter: Int
 
   /// Whether or not this Pokémon has visual gender differences.
-  let hasGenderDifferences: Bool
+  public let hasGenderDifferences: Bool
 
   /// Whether or not this Pokémon has multiple forms and can switch between
   /// them.
-  let formsSwitchable: Bool
+  public let formsSwitchable: Bool
 
   /// The rate at which this Pokémon species gains levels.
-  let growthRate: NamedAPIResource<GrowthRate>
+  public let growthRate: NamedAPIResource<GrowthRate>
 
   /// A list of Pokedexes and the indexes reserved within them for this Pokémon
   /// species.
-  let pokedexNumbers: [PokemonSpeciesDexEntry]
+  public let pokedexNumbers: [PokemonSpeciesDexEntry]
 
   /// A list of egg groups this Pokémon species is a member of.
-  let eggGroups: [NamedAPIResource<EggGroup>]
+  public let eggGroups: [NamedAPIResource<EggGroup>]
 
   /// The color of this Pokémon for Pokédex search.
-  let color: NamedAPIResource<PokemonColor>
+  public let color: NamedAPIResource<PokemonColor>
 
   /// The shape of this Pokémon for Pokédex search.
-  let shape: NamedAPIResource<PokemonShape>
+  public let shape: NamedAPIResource<PokemonShape>
 
   /// The Pokémon species that evolves into this Pokemon\_species.
-  let evolvesFromSpecies: NamedAPIResource<PokemonSpecies>
+  public let evolvesFromSpecies: NamedAPIResource<PokemonSpecies>
 
   /// The evolution chain this Pokémon species is a member of.
-  let evolutionChain: APIResource<EvolutionChain>
+  public let evolutionChain: APIResource<EvolutionChain>
 
   /// The habitat this Pokémon species can be encountered in.
-  let habitat: NamedAPIResource<PokemonHabitat>
+  public let habitat: NamedAPIResource<PokemonHabitat>
 
   /// The generation this Pokémon species was introduced in.
-  let generation: NamedAPIResource<Generation>
+  public let generation: NamedAPIResource<Generation>
 
   /// The name of this resource listed in different languages.
-  let names: [Name]
+  public let names: [Name]
 
   /// A list of encounters that can be had with this Pokémon species in pal
   /// park.
-  let palParkEncounters: [PalParkEncounterArea]
+  public let palParkEncounters: [PalParkEncounterArea]
 
   /// A list of flavor text entries for this Pokémon species.
-  let flavorTextEntries: [FlavorText]
+  public let flavorTextEntries: [FlavorText]
 
   /// Descriptions of different forms Pokémon take on within the Pokémon
   /// species.
-  let formDescriptions: [Description]
+  public let formDescriptions: [Description]
 
   /// The genus of this Pokémon species listed in multiple languages.
-  let genera: [Genus]
+  public let genera: [Genus]
 
   /// A list of the Pokémon that exist within this Pokémon species.
-  let varieties: [PokemonSpeciesVariety]
+  public let varieties: [PokemonSpeciesVariety]
 }

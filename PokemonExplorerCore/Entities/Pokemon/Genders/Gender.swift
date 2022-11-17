@@ -6,18 +6,18 @@
 ///
 /// Up-to-date documentation can be found one the
 /// [website](https://pokeapi.co/docs/v2#gender).
-struct Gender: Codable {
+public struct Gender: Codable {
   /// The identifier for this resource.
-  let id: Int
+  public let id: Int
 
   /// The name for this resource.
-  let name: String
+  public let name: String
 
   /// A list of Pokémon species that can be this gender and how likely it is
   /// that they will be.
-  let pokemonSpeciesDetails: [PokemonSpeciesGender]
+  public let pokemonSpeciesDetails: [PokemonSpeciesGender]
 
   /// A list of Pokémon species that required this gender in order for a Pokémon
   /// to evolve into them.
-  let requiredForEvolution: [NamedAPIResource<PokemonSpecies>]
+  public let requiredForEvolution: [NamedAPIResource<PokemonSpecies>]
 }

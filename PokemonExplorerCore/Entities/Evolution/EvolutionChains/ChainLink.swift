@@ -2,18 +2,18 @@
 ///
 /// Up-to-date documentation can be found one the
 /// [website](https://pokeapi.co/docs/v2#chainlink).
-struct ChainLink: Codable {
+public struct ChainLink: Codable {
   /// Whether or not this link is for a baby Pokémon. This would only ever be
   /// true on the base link.
-  let isBaby: Bool
+  public let isBaby: Bool
 
   /// The Pokémon species at this point in the evolution chain.
-  let species: NamedAPIResource<PokemonSpecies>
+  public let species: NamedAPIResource<PokemonSpecies>
 
   /// All details regarding the specific details of the referenced Pokémon
   /// species evolution.
-  let evolutionDetails: [EvolutionDetail]
+  public let evolutionDetails: [EvolutionDetail]
 
   /// A List of chain objects.
-  let evolvesTo: [ChainLink]
+  public let evolvesTo: [ChainLink]
 }

@@ -6,14 +6,14 @@
 ///
 /// Up-to-date documentation can be found one the
 /// [website](https://pokeapi.co/docs/v2#characteristic).
-struct Characteristic: Codable {
+public struct Characteristic: Codable {
   /// The identifier for this resource.
-  let id: Int
+  public let id: Int
 
   /// The remainder of the highest stat/IV divided by 5.
-  let geneModulo: Int
+  public let geneModulo: Int
 
   /// The possible values of the highest stat that would result in a Pokémon
   /// recieving this characteristic when divided by 5.
-  let possibleValues: [Int]
+  public let possibleValues: [Int]
 }

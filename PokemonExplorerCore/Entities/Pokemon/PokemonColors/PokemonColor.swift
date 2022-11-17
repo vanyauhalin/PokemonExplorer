@@ -5,16 +5,16 @@
 ///
 /// Up-to-date documentation can be found one the
 /// [website](https://pokeapi.co/docs/v2#pokemoncolor).
-struct PokemonColor: Codable {
+public struct PokemonColor: Codable {
   /// The identifier for this resource.
-  let id: Int
+  public let id: Int
 
   /// The name for this resource.
-  let name: String
+  public let name: String
 
   /// The name of this resource listed in different languages.
-  let names: [Name]
+  public let names: [Name]
 
   /// A list of the Pokémon species that have this color.
-  let pokemonSpecies: [NamedAPIResource<PokemonSpecies>]
+  public let pokemonSpecies: [NamedAPIResource<PokemonSpecies>]
 }

@@ -2,10 +2,10 @@
 ///
 /// Up-to-date documentation can be found one the
 /// [website](https://pokeapi.co/docs/v2#namedapiresource).
-struct NamedAPIResource<T>: Codable {
+public struct NamedAPIResource<T>: Codable where T: Codable {
   /// The name of the referenced resource.
-  let name: String
+  public let name: String
 
   /// The URL of the referenced resource.
-  let url: String
+  public let url: String
 }

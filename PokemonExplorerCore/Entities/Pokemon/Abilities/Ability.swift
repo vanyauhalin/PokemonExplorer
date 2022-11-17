@@ -5,32 +5,32 @@
 ///
 /// Up-to-date documentation can be found one the
 /// [website](https://pokeapi.co/docs/v2#ability).
-struct Ability: Codable {
+public struct Ability: Codable {
   /// The identifier for this resource.
-  let id: Int
+  public let id: Int
 
   /// The name for this resource.
-  let name: String
+  public let name: String
 
   /// Whether or not this ability originated in the main series of the video
   /// games.
-  let isMainSeries: Bool
+  public let isMainSeries: Bool
 
   /// The generation this ability originated in.
-  let generation: NamedAPIResource<Generation>
+  public let generation: NamedAPIResource<Generation>
 
   /// The name of this resource listed in different languages.
-  let names: [Name]
+  public let names: [Name]
 
   /// The effect of this ability listed in different languages.
-  let effectEntries: [VerboseEffect]
+  public let effectEntries: [VerboseEffect]
 
   /// The list of previous effects this ability has had across version groups.
-  let effectChanges: [AbilityEffectChange]
+  public let effectChanges: [AbilityEffectChange]
 
   /// The flavor text of this ability listed in different languages.
-  let flavorTextEntries: [AbilityFlavorText]
+  public let flavorTextEntries: [AbilityFlavorText]
 
   /// A list of Pokémon that could potentially have this ability.
-  let pokemon: [AbilityPokemon]
+  public let pokemon: [AbilityPokemon]
 }

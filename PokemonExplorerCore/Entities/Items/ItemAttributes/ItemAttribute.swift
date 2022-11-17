@@ -3,19 +3,19 @@
 ///
 /// Up-to-date documentation can be found one the
 /// [website](https://pokeapi.co/docs/v2#itemattribute).
-struct ItemAttribute: Codable {
+public struct ItemAttribute: Codable {
   /// The identifier for this resource.
-  let id: Int
+  public let id: Int
 
   /// The name for this resource.
-  let name: String
+  public let name: String
 
   /// A list of items that have this attribute.
-  let items: [NamedAPIResource<Item>]
+  public let items: [NamedAPIResource<Item>]
 
   /// The name of this item attribute listed in different languages.
-  let names: [Name]
+  public let names: [Name]
 
   /// The description of this item attribute listed in different languages.
-  let descriptions: [Description]
+  public let descriptions: [Description]
 }

@@ -3,27 +3,27 @@
 ///
 /// Up-to-date documentation can be found one the
 /// [website](https://pokeapi.co/docs/v2#locationarea).
-struct LocationArea: Codable {
+public struct LocationArea: Codable {
   /// The identifier for this resource.
-  let id: Int
+  public let id: Int
 
   /// The name for this resource.
-  let name: String
+  public let name: String
 
   /// The internal id of an API resource within game data.
-  let gameIndex: Int
+  public let gameIndex: Int
 
   /// A list of methods in which Pokémon may be encountered in this area and how
   /// likely the method will occur depending on the version of the game.
-  let encounterMethodRates: [EncounterMethodRate]
+  public let encounterMethodRates: [EncounterMethodRate]
 
   /// The region this location area can be found in.
-  let location: NamedAPIResource<Location>
+  public let location: NamedAPIResource<Location>
 
   /// The name of this resource listed in different languages.
-  let names: [Name]
+  public let names: [Name]
 
   /// A list of Pokémon that can be encountered in this area along with version
   /// specific details about the encounter.
-  let pokemonEncounters: [PokemonEncounter]
+  public let pokemonEncounters: [PokemonEncounter]
 }

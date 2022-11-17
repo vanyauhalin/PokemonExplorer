@@ -3,22 +3,22 @@
 ///
 /// Up-to-date documentation can be found one the
 /// [website](https://pokeapi.co/docs/v2#location).
-struct Location: Codable {
+public struct Location: Codable {
   /// The identifier for this resource.
-  let id: Int
+  public let id: Int
 
   /// The name for this resource.
-  let name: String
+  public let name: String
 
   /// The region this location can be found in.
-  let region: NamedAPIResource<Region>
+  public let region: NamedAPIResource<Region>
 
   /// The name of this resource listed in different languages.
-  let names: [Name]
+  public let names: [Name]
 
   /// A list of game indices relevent to this location by generation.
-  let gameIndices: [GenerationGameIndex]
+  public let gameIndices: [GenerationGameIndex]
 
   /// Areas that can be found within this location.
-  let areas: [NamedAPIResource<LocationArea>]
+  public let areas: [NamedAPIResource<LocationArea>]
 }

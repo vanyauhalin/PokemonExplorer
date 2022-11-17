@@ -6,17 +6,17 @@
 ///
 /// Up-to-date documentation can be found one the
 /// [website](https://pokeapi.co/docs/v2#pokeathlonstat).
-struct PokeathlonStat: Codable {
+public struct PokeathlonStat: Codable {
   /// The identifier for this resource.
-  let id: Int
+  public let id: Int
 
   /// The name for this resource.
-  let name: String
+  public let name: String
 
   /// The name of this resource listed in different languages.
-  let names: [Name]
+  public let names: [Name]
 
   /// A detail of natures which affect this Pokéathlon stat positively or
   /// negatively.
-  let affectingNatures: NaturePokeathlonStatAffectSets
+  public let affectingNatures: NaturePokeathlonStatAffectSets
 }

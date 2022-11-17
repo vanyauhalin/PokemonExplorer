@@ -4,25 +4,25 @@
 ///
 /// Up-to-date documentation can be found one the
 /// [website](https://pokeapi.co/docs/v2#region).
-struct Region: Codable {
+public struct Region: Codable {
   /// The identifier for this resource.
-  let id: Int
+  public let id: Int
 
   /// A list of locations that can be found in this region.
-  let locations: [NamedAPIResource<Location>]
+  public let locations: [NamedAPIResource<Location>]
 
   /// The name for this resource.
-  let name: String
+  public let name: String
 
   /// The name of this resource listed in different languages.
-  let names: [Name]
+  public let names: [Name]
 
   /// The generation this region was introduced in.
-  let mainGeneration: NamedAPIResource<Generation>
+  public let mainGeneration: NamedAPIResource<Generation>
 
   /// A list of pokédexes that catalogue Pokémon in this region.
-  let pokedexes: [NamedAPIResource<Pokedex>]
+  public let pokedexes: [NamedAPIResource<Pokedex>]
 
   /// A list of version groups where this region can be visited.
-  let versionGroups: [NamedAPIResource<VersionGroup>]
+  public let versionGroups: [NamedAPIResource<VersionGroup>]
 }

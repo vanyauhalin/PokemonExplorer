@@ -2,11 +2,11 @@
 ///
 /// Up-to-date documentation can be found one the
 /// [website](https://pokeapi.co/docs/v2#locationareaencounter).
-struct LocationAreaEncounter: Codable {
+public struct LocationAreaEncounter: Codable {
   /// The location area the referenced Pokémon can be encountered in.
-  let locationArea: NamedAPIResource<LocationArea>
+  public let locationArea: NamedAPIResource<LocationArea>
 
   /// A list of versions and encounters with the referenced Pokémon that might
   /// happen.
-  let versionDetails: [VersionEncounterDetail]
+  public let versionDetails: [VersionEncounterDetail]
 }

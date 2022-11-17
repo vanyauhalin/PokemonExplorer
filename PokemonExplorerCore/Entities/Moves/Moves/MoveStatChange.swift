@@ -2,10 +2,10 @@
 ///
 /// Up-to-date documentation can be found one the
 /// [website](https://pokeapi.co/docs/v2#movestatchange).
-struct MoveStatChange: Codable {
+public struct MoveStatChange: Codable {
   /// The amount of change.
-  let change: Int
+  public let change: Int
 
   /// The stat being affected.
-  let stat: NamedAPIResource<Stat>
+  public let stat: NamedAPIResource<Stat>
 }

@@ -5,19 +5,19 @@
 ///
 /// Up-to-date documentation can be found one the
 /// [website](https://pokeapi.co/docs/v2#berryflavor).
-struct BerryFlavor: Codable {
+public struct BerryFlavor: Codable {
   /// The identifier for this resource.
-  let id: Int
+  public let id: Int
 
   /// The name for this resource.
-  let name: String
+  public let name: String
 
   /// A list of the berries with this flavor.
-  let berries: [FlavorBerryMap]
+  public let berries: [FlavorBerryMap]
 
   /// The contest type that correlates with this berry flavor.
-  let contestType: NamedAPIResource<ContestType>
+  public let contestType: NamedAPIResource<ContestType>
 
   /// The name of this resource listed in different languages.
-  let names: [Name]
+  public let names: [Name]
 }

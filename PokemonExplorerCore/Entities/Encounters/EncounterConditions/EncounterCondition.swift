@@ -3,16 +3,16 @@
 ///
 /// Up-to-date documentation can be found one the
 /// [website](https://pokeapi.co/docs/v2#encountercondition).
-struct EncounterCondition: Codable {
+public struct EncounterCondition: Codable {
   /// The identifier for this resource.
-  let id: Int
+  public let id: Int
 
   /// The name for this resource.
-  let name: String
+  public let name: String
 
   /// The name of this resource listed in different languages.
-  let names: [Name]
+  public let names: [Name]
 
   /// A list of possible values for this encounter condition.
-  let values: [NamedAPIResource<EncounterConditionValue>]
+  public let values: [NamedAPIResource<EncounterConditionValue>]
 }

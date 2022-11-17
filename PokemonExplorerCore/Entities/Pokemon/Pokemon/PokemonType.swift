@@ -2,10 +2,10 @@
 ///
 /// Up-to-date documentation can be found one the
 /// [website](https://pokeapi.co/docs/v2#pokemontype).
-struct PokemonType: Codable {
+public struct PokemonType: Codable {
   /// The order the Pokémon's types are listed in.
-  let slot: Int
+  public let slot: Int
 
   /// The type the referenced Pokémon has.
-  let type: NamedAPIResource<PType>
+  public let type: NamedAPIResource<PType>
 }

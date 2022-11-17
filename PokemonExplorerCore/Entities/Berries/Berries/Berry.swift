@@ -6,45 +6,45 @@
 ///
 /// Up-to-date documentation can be found one the
 /// [website](https://pokeapi.co/docs/v2#berry).
-struct Berry: Codable {
+public struct Berry: Codable {
   /// The identifier for this resource.
-  let id: Int
+  public let id: Int
 
   /// The name for this resource.
-  let name: String
+  public let name: String
 
   /// Time it takes the tree to grow one stage, in hours. Berry trees go through
   /// four of these growth stages before they can be picked.
-  let growthTime: Int
+  public let growthTime: Int
 
   /// The maximum number of these berries that can grow on one tree in
   /// Generation IV.
-  let maxHarvest: Int
+  public let maxHarvest: Int
 
   /// The power of the move "Natural Gift" when used with this Berry.
-  let naturalGiftPower: Int
+  public let naturalGiftPower: Int
 
   /// The size of this Berry, in millimeters.
-  let size: Int
+  public let size: Int
 
   /// The smoothness of this Berry, used in making Pokéblocks or Poffins.
-  let smoothness: Int
+  public let smoothness: Int
 
   /// The speed at which this Berry dries out the soil as it grows. A higher
   /// rate means the soil dries more quickly.
-  let soilDryness: Int
+  public let soilDryness: Int
 
   /// The firmness of this berry, used in making Pokéblocks or Poffins.
-  let firmness: NamedAPIResource<BerryFirmness>
+  public let firmness: NamedAPIResource<BerryFirmness>
 
   /// A list of references to each flavor a berry can have and the potency of
   /// each of those flavors in regard to this berry.
-  let flavors: [BerryFlavorMap]
+  public let flavors: [BerryFlavorMap]
 
   /// Berries are actually items. This is a reference to the item specific data
   /// for this berry.
-  let item: NamedAPIResource<Item>
+  public let item: NamedAPIResource<Item>
 
   /// The type inherited by "Natural Gift" when used with this Berry.
-  let naturalGiftType: NamedAPIResource<PType>
+  public let naturalGiftType: NamedAPIResource<PType>
 }

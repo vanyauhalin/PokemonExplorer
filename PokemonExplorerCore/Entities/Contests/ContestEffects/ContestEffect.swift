@@ -2,19 +2,19 @@
 ///
 /// Up-to-date documentation can be found one the
 /// [website](https://pokeapi.co/docs/v2#contesteffect).
-struct ContestEffect: Codable {
+public struct ContestEffect: Codable {
   /// The identifier for this resource.
-  let id: Int
+  public let id: Int
 
   /// The base number of hearts the user of this move gets.
-  let appeal: Int
+  public let appeal: Int
 
   /// The base number of hearts the user's opponent loses.
-  let jam: Int
+  public let jam: Int
 
   /// The result of this contest effect listed in different languages.
-  let effectEntries: [Effect]
+  public let effectEntries: [Effect]
 
   /// The flavor text of this contest effect listed in different languages.
-  let flavorTextEntries: [FlavorText]
+  public let flavorTextEntries: [FlavorText]
 }

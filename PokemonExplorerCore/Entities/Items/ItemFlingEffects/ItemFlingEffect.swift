@@ -2,17 +2,16 @@
 ///
 /// Up-to-date documentation can be found one the
 /// [website](https://pokeapi.co/docs/v2#itemflingeffect).
-struct ItemFlingEffect: Codable {
+public struct ItemFlingEffect: Codable {
   /// The identifier for this resource.
-  let id: Int
+  public let id: Int
 
   /// The name for this resource.
-  let name: String
+  public let name: String
 
   /// The result of this fling effect listed in different languages.
-  let effectEntries: [Effect]
+  public let effectEntries: [Effect]
 
   /// A list of items that have this fling effect.
-  let items: [NamedAPIResource<Item>]
+  public let items: [NamedAPIResource<Item>]
 }
-

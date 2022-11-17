@@ -3,17 +3,17 @@
 ///
 /// Up-to-date documentation can be found one the
 /// [website](https://pokeapi.co/docs/v2#supercontesteffect).
-struct SuperContestEffect: Codable {
+public struct SuperContestEffect: Codable {
   /// The identifier for this resource.
-  let id: Int
+  public let id: Int
 
   /// The level of appeal this super contest effect has.
-  let appeal: Int
+  public let appeal: Int
 
   /// The flavor text of this super contest effect listed in different
   /// languages.
-  let flavorTextEntries: [FlavorText]
+  public let flavorTextEntries: [FlavorText]
 
   /// A list of moves that have the effect when used in super contests.
-  let moves: [NamedAPIResource<Move>]
+  public let moves: [NamedAPIResource<Move>]
 }

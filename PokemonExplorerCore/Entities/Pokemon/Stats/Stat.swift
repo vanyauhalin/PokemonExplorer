@@ -4,32 +4,32 @@
 ///
 /// Up-to-date documentation can be found one the
 /// [website](https://pokeapi.co/docs/v2#stat).
-struct Stat: Codable {
+public struct Stat: Codable {
   /// The identifier for this resource.
-  let id: Int
+  public let id: Int
 
   /// The name for this resource.
-  let name: String
+  public let name: String
 
   /// ID the games use for this stat.
-  let gameIndex: Int
+  public let gameIndex: Int
 
   /// Whether this stat only exists within a battle.
-  let isBattleOnly: Bool
+  public let isBattleOnly: Bool
 
   /// A detail of moves which affect this stat positively or negatively.
-  let affectingMoves: MoveStatAffectSets
+  public let affectingMoves: MoveStatAffectSets
 
   /// A detail of natures which affect this stat positively or negatively.
-  let affectingNatures: NatureStatAffectSets
+  public let affectingNatures: NatureStatAffectSets
 
   /// A list of characteristics that are set on a Pokémon when its highest base
   /// stat is this stat.
-  let characteristics: [APIResource<Characteristic>]
+  public let characteristics: [APIResource<Characteristic>]
 
   /// The class of damage this stat is directly related to.
-  let moveDamageClass: NamedAPIResource<MoveDamageClass>
+  public let moveDamageClass: NamedAPIResource<MoveDamageClass>
 
   /// The name of this resource listed in different languages.
-  let names: [Name]
+  public let names: [Name]
 }

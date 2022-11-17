@@ -5,31 +5,31 @@
 ///
 /// Up-to-date documentation can be found one the
 /// [website](https://pokeapi.co/docs/v2#generation).
-struct Generation: Codable {
+public struct Generation: Codable {
   /// The identifier for this resource.
-  let id: Int
+  public let id: Int
 
   /// The name for this resource.
-  let name: String
+  public let name: String
 
   /// A list of abilities that were introduced in this generation.
-  let abilities: [NamedAPIResource<Ability>]
+  public let abilities: [NamedAPIResource<Ability>]
 
   /// The name of this resource listed in different languages.
-  let names: [Name]
+  public let names: [Name]
 
   /// The main region travelled in this generation.
-  let mainRegion: NamedAPIResource<Region>
+  public let mainRegion: NamedAPIResource<Region>
 
   /// A list of moves that were introduced in this generation.
-  let moves: [NamedAPIResource<Move>]
+  public let moves: [NamedAPIResource<Move>]
 
   /// A list of Pokémon species that were introduced in this generation.
-  let pokemonSpecies: [NamedAPIResource<PokemonSpecies>]
+  public let pokemonSpecies: [NamedAPIResource<PokemonSpecies>]
 
   /// A list of types that were introduced in this generation.
-  let types: [NamedAPIResource<PType>]
+  public let types: [NamedAPIResource<PType>]
 
   /// A list of version groups that were introduced in this generation.
-  let versionGroups: [NamedAPIResource<VersionGroup>]
+  public let versionGroups: [NamedAPIResource<VersionGroup>]
 }

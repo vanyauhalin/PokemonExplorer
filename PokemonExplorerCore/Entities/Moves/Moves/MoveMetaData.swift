@@ -2,46 +2,46 @@
 ///
 /// Up-to-date documentation can be found one the
 /// [website](https://pokeapi.co/docs/v2#movemetadata).
-struct MoveMetaData: Codable {
+public struct MoveMetaData: Codable {
   /// The status ailment this move inflicts on its target.
-  let ailment: NamedAPIResource<MoveAilment>
+  public let ailment: NamedAPIResource<MoveAilment>
 
   /// The category of move this move falls under, e.g. damage or ailment.
-  let category: NamedAPIResource<MoveCategory>
+  public let category: NamedAPIResource<MoveCategory>
 
   /// The minimum number of times this move hits. Null if it always only hits
   /// once.
-  let minHits: Int
+  public let minHits: Int
 
   /// The maximum number of times this move hits. Null if it always only hits
   /// once.
-  let maxHits: Int
+  public let maxHits: Int
 
   /// The minimum number of turns this move continues to take effect. Null if it
   /// always only lasts one turn.
-  let minTurns: Int
+  public let minTurns: Int
 
   /// The maximum number of turns this move continues to take effect. Null if it
   /// always only lasts one turn.
-  let maxTurns: Int
+  public let maxTurns: Int
 
   /// HP drain (if positive) or Recoil damage (if negative), in percent of
   /// damage done.
-  let drain: Int
+  public let drain: Int
 
   /// The amount of hp gained by the attacking Pokemon, in percent of it's
   /// maximum HP.
-  let healing: Int
+  public let healing: Int
 
   /// Critical hit rate bonus.
-  let critRate: Int
+  public let critRate: Int
 
   /// The likelihood this attack will cause an ailment.
-  let ailmentChance: Int
+  public let ailmentChance: Int
 
   /// The likelihood this attack will cause the target Pokémon to flinch.
-  let flinchChance: Int
+  public let flinchChance: Int
 
   /// The likelihood this attack will cause a stat change in the target Pokémon.
-  let statChance: Int
+  public let statChance: Int
 }

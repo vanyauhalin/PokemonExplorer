@@ -4,16 +4,16 @@
 ///
 /// Up-to-date documentation can be found one the
 /// [website](https://pokeapi.co/docs/v2#evolutionchain).
-struct EvolutionChain: Codable {
+public struct EvolutionChain: Codable {
   /// The identifier for this resource.
-  let id: Int
+  public let id: Int
 
   /// The item that a Pokémon would be holding when mating that would trigger
   /// the egg hatching a baby Pokémon rather than a basic Pokémon.
-  let babyTriggerItem: NamedAPIResource<Item>
+  public let babyTriggerItem: NamedAPIResource<Item>
 
   /// The base chain link object. Each link contains evolution details for a
   /// Pokémon in the chain. Each link references the next Pokémon in the natural
   /// evolution order.
-  let chain: ChainLink
+  public let chain: ChainLink
 }

@@ -2,10 +2,10 @@
 ///
 /// Up-to-date documentation can be found one the
 /// [website](https://pokeapi.co/docs/v2#pokemonspeciesvariety).
-struct PokemonSpeciesVariety: Codable {
+public struct PokemonSpeciesVariety: Codable {
   /// Whether this variety is the default variety.
-  let isDefault: Bool
+  public let isDefault: Bool
 
   /// The Pokémon variety.
-  let pokemon: NamedAPIResource<Pokemon>
+  public let pokemon: NamedAPIResource<Pokemon>
 }

@@ -4,33 +4,33 @@
 ///
 /// Up-to-date documentation can be found one the
 /// [website](https://pokeapi.co/docs/v2#nature).
-struct Nature: Codable {
+public struct Nature: Codable {
   /// The identifier for this resource.
-  let id: Int
+  public let id: Int
 
   /// The name for this resource.
-  let name: String
+  public let name: String
 
   /// The stat decreased by 10% in Pokémon with this nature.
-  let decreasedStat: NamedAPIResource<Stat>
+  public let decreasedStat: NamedAPIResource<Stat>
 
   /// The stat increased by 10% in Pokémon with this nature.
-  let increasedStat: NamedAPIResource<Stat>
+  public let increasedStat: NamedAPIResource<Stat>
 
   /// The flavor hated by Pokémon with this nature.
-  let hatesFlavor: NamedAPIResource<BerryFlavor>
+  public let hatesFlavor: NamedAPIResource<BerryFlavor>
 
   /// The flavor liked by Pokémon with this nature.
-  let likesFlavor: NamedAPIResource<BerryFlavor>
+  public let likesFlavor: NamedAPIResource<BerryFlavor>
 
   /// A list of Pokéathlon stats this nature effects and how much it effects
   /// them.
-  let pokeathlonStatChanges: [NatureStatChange]
+  public let pokeathlonStatChanges: [NatureStatChange]
 
   /// A list of battle styles and how likely a Pokémon with this nature is to
   /// use them in the Battle Palace or Battle Tent.
-  let moveBattleStylePreferences: [MoveBattleStylePreference]
+  public let moveBattleStylePreferences: [MoveBattleStylePreference]
 
   /// The name of this resource listed in different languages.
-  let names: [Name]
+  public let names: [Name]
 }

@@ -5,16 +5,16 @@
 ///
 /// Up-to-date documentation can be found one the
 /// [website](https://pokeapi.co/docs/v2#contesttype).
-struct ContestType: Codable {
+public struct ContestType: Codable {
   /// The identifier for this resource.
-  let id: Int
+  public let id: Int
 
   /// The name for this resource.
-  let name: String
+  public let name: String
 
   /// The berry flavor that correlates with this contest type.
-  let berryFlavor: NamedAPIResource<BerryFlavor>
+  public let berryFlavor: NamedAPIResource<BerryFlavor>
 
   /// The name of this contest type listed in different languages.
-  let names: [ContestName]
+  public let names: [ContestName]
 }

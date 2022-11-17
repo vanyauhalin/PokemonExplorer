@@ -2,17 +2,16 @@
 ///
 /// Up-to-date documentation can be found one the
 /// [website](https://pokeapi.co/docs/v2#itempocket).
-struct ItemPocket: Codable {
-
+public struct ItemPocket: Codable {
   /// The identifier for this resource.
-  let id: Int
+  public let id: Int
 
   /// The name for this resource.
-  let name: String
+  public let name: String
 
   /// A list of item categories that are relevant to this item pocket.
-  let categories: [NamedAPIResource<ItemCategory>]
+  public let categories: [NamedAPIResource<ItemCategory>]
 
   /// The name of this resource listed in different languages.
-  let names: [Name]
+  public let names: [Name]
 }

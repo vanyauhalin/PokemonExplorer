@@ -3,16 +3,16 @@
 ///
 /// Up-to-date documentation can be found one the
 /// [website](https://pokeapi.co/docs/v2#pokemonhabitat).
-struct PokemonHabitat: Codable {
+public struct PokemonHabitat: Codable {
   /// The identifier for this resource.
-  let id: Int
+  public let id: Int
 
   /// The name for this resource.
-  let name: String
+  public let name: String
 
   /// The name of this resource listed in different languages.
-  let names: [Name]
+  public let names: [Name]
 
   /// A list of the Pokémon species that can be found in this habitat.
-  let pokemonSpecies: [NamedAPIResource<PokemonSpecies>]
+  public let pokemonSpecies: [NamedAPIResource<PokemonSpecies>]
 }

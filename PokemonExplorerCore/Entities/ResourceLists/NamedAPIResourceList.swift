@@ -2,16 +2,16 @@
 ///
 /// Up-to-date documentation can be found one the
 /// [website](https://pokeapi.co/docs/v2#namedapiresourcelist).
-struct NamedAPIResourceList<T>: Codable {
+public struct NamedAPIResourceList<T>: Codable where T: Codable {
   /// The total number of resources available from this API.
-  let count: Int
+  public let count: Int
 
   /// The URL for the next page in the list.
-  let next: String
+  public let next: String
 
   /// The URL for the previous page in the list.
-  let previous: String
+  public let previous: String
 
   /// A list of named API resources.
-  let results: [NamedAPIResource<T>]
+  public let results: [NamedAPIResource<T>]
 }

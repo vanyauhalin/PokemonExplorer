@@ -5,16 +5,16 @@
 ///
 /// Up-to-date documentation can be found one the
 /// [website](https://pokeapi.co/docs/v2#encountermethod).
-struct EncounterMethod: Codable {
+public struct EncounterMethod: Codable {
   /// The identifier for this resource.
-  let id: Int
+  public let id: Int
 
   /// The name for this resource.
-  let name: String
+  public let name: String
 
   /// A good value for sorting.
-  let order: Int
+  public let order: Int
 
   /// The name of this resource listed in different languages.
-  let names: [Name]
+  public let names: [Name]
 }
