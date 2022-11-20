@@ -50,7 +50,7 @@ public struct PokemonSpecies: Codable {
   public let formsSwitchable: Bool
 
   /// The rate at which this Pokémon species gains levels.
-  public let growthRate: NamedAPIResource<GrowthRate>
+  public let growthRate: NamedAPIResource<GrowthRate>?
 
   /// A list of Pokedexes and the indexes reserved within them for this Pokémon
   /// species.
@@ -60,22 +60,22 @@ public struct PokemonSpecies: Codable {
   public let eggGroups: [NamedAPIResource<EggGroup>]
 
   /// The color of this Pokémon for Pokédex search.
-  public let color: NamedAPIResource<PokemonColor>
+  public let color: NamedAPIResource<PokemonColor>?
 
   /// The shape of this Pokémon for Pokédex search.
-  public let shape: NamedAPIResource<PokemonShape>
+  public let shape: NamedAPIResource<PokemonShape>?
 
   /// The Pokémon species that evolves into this Pokemon\_species.
-  public let evolvesFromSpecies: NamedAPIResource<PokemonSpecies>
+  public let evolvesFromSpecies: NamedAPIResource<PokemonSpecies>?
 
   /// The evolution chain this Pokémon species is a member of.
-  public let evolutionChain: APIResource<EvolutionChain>
+  public let evolutionChain: APIResource<EvolutionChain>?
 
   /// The habitat this Pokémon species can be encountered in.
-  public let habitat: NamedAPIResource<PokemonHabitat>
+  public let habitat: NamedAPIResource<PokemonHabitat>?
 
   /// The generation this Pokémon species was introduced in.
-  public let generation: NamedAPIResource<Generation>
+  public let generation: NamedAPIResource<Generation>?
 
   /// The name of this resource listed in different languages.
   public let names: [Name]

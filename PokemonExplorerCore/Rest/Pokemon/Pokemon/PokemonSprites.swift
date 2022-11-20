@@ -10,10 +10,10 @@ public struct PokemonSprites: Codable {
   public let frontShiny: String
 
   /// The female depiction of this Pokémon from the front in battle.
-  public let frontFemale: String
+  public let frontFemale: String?
 
   /// The shiny female depiction of this Pokémon from the front in battle.
-  public let frontShinyFemale: String
+  public let frontShinyFemale: String?
 
   /// The default depiction of this Pokémon from the back in battle.
   public let backDefault: String
@@ -22,8 +22,8 @@ public struct PokemonSprites: Codable {
   public let backShiny: String
 
   /// The female depiction of this Pokémon from the back in battle.
-  public let backFemale: String
+  public let backFemale: String?
 
   /// The shiny female depiction of this Pokémon from the back in battle.
-  public let backShinyFemale: String
+  public let backShinyFemale: String?
 }

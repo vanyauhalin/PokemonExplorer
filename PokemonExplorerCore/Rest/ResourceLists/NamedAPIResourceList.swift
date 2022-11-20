@@ -7,10 +7,10 @@ public struct NamedAPIResourceList<T>: Codable where T: Codable {
   public let count: Int
 
   /// The URL for the next page in the list.
-  public let next: String
+  public let next: String?
 
   /// The URL for the previous page in the list.
-  public let previous: String
+  public let previous: String?
 
   /// A list of named API resources.
   public let results: [NamedAPIResource<T>]
