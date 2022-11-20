@@ -30,6 +30,10 @@ enum RestEndpoint {
           template.contains(parameterName)
         })
       else {
+        temporally = temporally.replacingOccurrences(
+          of: "/\(template)/",
+          with: "/"
+        )
         return
       }
       let parameterValue = parameter.1
@@ -56,6 +60,13 @@ enum RestEndpoint {
           "\(parameterName)=\(parameterValue)"
         }
         .joined(separator: "&")
+      guard !joinedParameters.isEmpty else {
+        temporally = temporally.replacingOccurrences(
+          of: template,
+          with: ""
+        )
+        return
+      }
       temporally = temporally.replacingOccurrences(
         of: template,
         with: "?\(joinedParameters)"
