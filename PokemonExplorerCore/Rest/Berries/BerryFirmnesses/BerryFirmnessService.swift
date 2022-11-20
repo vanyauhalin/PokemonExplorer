@@ -3,7 +3,7 @@ import Foundation
 /// Service for interaction with `/berry-firmness` endpoint.
 public struct BerryFirmnessService: RestService {
   public let baseUrl = "https://pokeapi.co/api/v2"
-  public let path = "/berry-firmness/{id,name}/{limit,offset}"
+  public let path = "/berry-firmness/{id,name}/{?limit,offset}"
   public let session: URLSession
 
   /// Get a `BerryFirmness`.

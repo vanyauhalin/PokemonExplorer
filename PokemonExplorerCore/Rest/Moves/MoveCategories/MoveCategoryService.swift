@@ -3,7 +3,7 @@ import Foundation
 /// Service for interaction with `/move-category` endpoint.
 public struct MoveCategoryService: RestService {
   public let baseUrl = "https://pokeapi.co/api/v2"
-  public let path = "/move-category/{id,name}/{limit,offset}"
+  public let path = "/move-category/{id,name}/{?limit,offset}"
   public let session: URLSession
 
   /// Get a `MoveCategory`.

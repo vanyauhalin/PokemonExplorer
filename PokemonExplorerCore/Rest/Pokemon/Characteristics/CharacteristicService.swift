@@ -3,7 +3,7 @@ import Foundation
 /// Service for interaction with `/characteristic` endpoint.
 public struct CharacteristicService: RestService {
   public let baseUrl = "https://pokeapi.co/api/v2"
-  public let path = "/characteristic/{id}/{limit,offset}"
+  public let path = "/characteristic/{id}/{?limit,offset}"
   public let session: URLSession
 
   /// Get a `Characteristic`.

@@ -3,7 +3,7 @@ import Foundation
 /// Service for interaction with `/move-battle-style` endpoint.
 public struct MoveBattleStyleService: RestService {
   public let baseUrl = "https://pokeapi.co/api/v2"
-  public let path = "/move-battle-style/{id,name}/{limit,offset}"
+  public let path = "/move-battle-style/{id,name}/{?limit,offset}"
   public let session: URLSession
 
   /// Get a `MoveBattleStyle`.

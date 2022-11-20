@@ -3,7 +3,7 @@ import Foundation
 /// Service for interaction with `/pokemon-species` endpoint.
 public struct PokemonSpeciesService: RestService {
   public let baseUrl = "https://pokeapi.co/api/v2"
-  public let path = "/pokemon-species/{id,name}/{limit,offset}"
+  public let path = "/pokemon-species/{id,name}/{?limit,offset}"
   public let session: URLSession
 
   /// Get a `PokemonSpecies`.

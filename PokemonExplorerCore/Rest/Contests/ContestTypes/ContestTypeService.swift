@@ -3,7 +3,7 @@ import Foundation
 /// Service for interaction with `/contest-type` endpoint.
 public struct ContestTypeService: RestService {
   public let baseUrl = "https://pokeapi.co/api/v2"
-  public let path = "/contest-type/{id,name}/{limit,offset}"
+  public let path = "/contest-type/{id,name}/{?limit,offset}"
   public let session: URLSession
 
   /// Get a `ContestType`.

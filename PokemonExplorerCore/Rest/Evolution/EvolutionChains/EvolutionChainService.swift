@@ -3,7 +3,7 @@ import Foundation
 /// Service for interaction with `/evolution-chain` endpoint.
 public struct EvolutionChainService: RestService {
   public let baseUrl = "https://pokeapi.co/api/v2"
-  public let path = "/evolution-chain/{id}/{limit,offset}"
+  public let path = "/evolution-chain/{id}/{?limit,offset}"
   public let session: URLSession
 
   /// Get a `EvolutionChain`.

@@ -5,7 +5,7 @@ enum RestEndpoint {
 
   enum Patterns: String {
     case path = "(\\{\\S.*?\\})\\/"
-    case query = ".*(\\{\\S.*?\\})$"
+    case query = ".*(\\{\\?\\S.*?\\})$"
   }
 
   static func apply<ParameterValue>(

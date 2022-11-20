@@ -3,7 +3,7 @@ import Foundation
 /// Service for interaction with `/version` endpoint.
 public struct VersionService: RestService {
   public let baseUrl = "https://pokeapi.co/api/v2"
-  public let path = "/version/{id,name}/{limit,offset}"
+  public let path = "/version/{id,name}/{?limit,offset}"
   public let session: URLSession
 
   /// Get a `Version`.

@@ -3,7 +3,7 @@ import Foundation
 /// Service for interaction with `/move-learn-method` endpoint.
 public struct MoveLearnMethodService: RestService {
   public let baseUrl = "https://pokeapi.co/api/v2"
-  public let path = "/move-learn-method/{id,name}/{limit,offset}"
+  public let path = "/move-learn-method/{id,name}/{?limit,offset}"
   public let session: URLSession
 
   /// Get a `MoveLearnMethod`.

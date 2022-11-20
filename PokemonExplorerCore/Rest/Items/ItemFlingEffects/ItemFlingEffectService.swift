@@ -3,7 +3,7 @@ import Foundation
 /// Service for interaction with `/item-fling-effect` endpoint.
 public struct ItemFlingEffectService: RestService {
   public let baseUrl = "https://pokeapi.co/api/v2"
-  public let path = "/item-fling-effect/{id,name}/{limit,offset}"
+  public let path = "/item-fling-effect/{id,name}/{?limit,offset}"
   public let session: URLSession
 
   /// Get a `ItemFlingEffect`.

@@ -3,7 +3,7 @@ import Foundation
 /// Service for interaction with `/pokeathlon-stat` endpoint.
 public struct PokeathlonStatService: RestService {
   public let baseUrl = "https://pokeapi.co/api/v2"
-  public let path = "/pokeathlon-stat/{id,name}/{limit,offset}"
+  public let path = "/pokeathlon-stat/{id,name}/{?limit,offset}"
   public let session: URLSession
 
   /// Get a `PokeathlonStat`.

@@ -3,7 +3,7 @@ import Foundation
 /// Service for interaction with `/type` endpoint.
 public struct TypeService: RestService {
   public let baseUrl = "https://pokeapi.co/api/v2"
-  public let path = "/type/{id,name}/{limit,offset}"
+  public let path = "/type/{id,name}/{?limit,offset}"
   public let session: URLSession
 
   /// Get a `Type`.

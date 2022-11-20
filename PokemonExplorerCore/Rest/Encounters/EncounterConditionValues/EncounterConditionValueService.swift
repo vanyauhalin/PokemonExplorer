@@ -3,7 +3,7 @@ import Foundation
 /// Service for interaction with `/encounter-condition-value` endpoint.
 public struct EncounterConditionValueService: RestService {
   public let baseUrl = "https://pokeapi.co/api/v2"
-  public let path = "/encounter-condition-value/{id,name}/{limit,offset}"
+  public let path = "/encounter-condition-value/{id,name}/{?limit,offset}"
   public let session: URLSession
 
   /// Get a `EncounterConditionValue`.

@@ -3,7 +3,7 @@ import Foundation
 /// Service for interaction with `/location` endpoint.
 public struct LocationService: RestService {
   public let baseUrl = "https://pokeapi.co/api/v2"
-  public let path = "/location/{id,name}/{limit,offset}"
+  public let path = "/location/{id,name}/{?limit,offset}"
   public let session: URLSession
 
   /// Get a `Location`.

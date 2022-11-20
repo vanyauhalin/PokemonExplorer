@@ -3,7 +3,7 @@ import Foundation
 /// Service for interaction with `/contest-effect` endpoint.
 public struct ContestEffectService: RestService {
   public let baseUrl = "https://pokeapi.co/api/v2"
-  public let path = "/contest-effect/{id}/{limit,offset}"
+  public let path = "/contest-effect/{id}/{?limit,offset}"
   public let session: URLSession
 
   /// Get a `ContestEffect`.

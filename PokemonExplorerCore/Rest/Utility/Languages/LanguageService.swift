@@ -3,7 +3,7 @@ import Foundation
 /// Service for interaction with `/language` endpoint.
 public struct LanguageService: RestService {
   public let baseUrl = "https://pokeapi.co/api/v2"
-  public let path = "/language/{id,name}/{limit,offset}"
+  public let path = "/language/{id,name}/{?limit,offset}"
   public let session: URLSession
 
   /// Get a `Language`.

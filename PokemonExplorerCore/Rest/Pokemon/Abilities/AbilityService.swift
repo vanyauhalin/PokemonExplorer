@@ -3,7 +3,7 @@ import Foundation
 /// Service for interaction with `/ability` endpoint.
 public struct AbilityService: RestService {
   public let baseUrl = "https://pokeapi.co/api/v2"
-  public let path = "/ability/{id,name}/{limit,offset}"
+  public let path = "/ability/{id,name}/{?limit,offset}"
   public let session: URLSession
 
   /// Get a `Ability`.

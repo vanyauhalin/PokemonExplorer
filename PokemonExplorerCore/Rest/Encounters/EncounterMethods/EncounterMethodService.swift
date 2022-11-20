@@ -3,7 +3,7 @@ import Foundation
 /// Service for interaction with `/encounter-method` endpoint.
 public struct EncounterMethodService: RestService {
   public let baseUrl = "https://pokeapi.co/api/v2"
-  public let path = "/encounter-method/{id,name}/{limit,offset}"
+  public let path = "/encounter-method/{id,name}/{?limit,offset}"
   public let session: URLSession
 
   /// Get a `EncounterMethod`.

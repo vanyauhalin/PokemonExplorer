@@ -3,7 +3,7 @@ import Foundation
 /// Service for interaction with `/pokemon-color` endpoint.
 public struct PokemonColorService: RestService {
   public let baseUrl = "https://pokeapi.co/api/v2"
-  public let path = "/pokemon-color/{id,name}/{limit,offset}"
+  public let path = "/pokemon-color/{id,name}/{?limit,offset}"
   public let session: URLSession
 
   /// Get a `PokemonColor`.

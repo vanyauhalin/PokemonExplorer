@@ -3,7 +3,7 @@ import Foundation
 /// Service for interaction with `/pokemon-shape` endpoint.
 public struct PokemonShapeService: RestService {
   public let baseUrl = "https://pokeapi.co/api/v2"
-  public let path = "/pokemon-shape/{id,name}/{limit,offset}"
+  public let path = "/pokemon-shape/{id,name}/{?limit,offset}"
   public let session: URLSession
 
   /// Get a `PokemonShape`.

@@ -3,7 +3,7 @@ import Foundation
 /// Service for interaction with `/move-damage-class` endpoint.
 public struct MoveDamageClassService: RestService {
   public let baseUrl = "https://pokeapi.co/api/v2"
-  public let path = "/move-damage-class/{id,name}/{limit,offset}"
+  public let path = "/move-damage-class/{id,name}/{?limit,offset}"
   public let session: URLSession
 
   /// Get a `MoveDamageClass`.

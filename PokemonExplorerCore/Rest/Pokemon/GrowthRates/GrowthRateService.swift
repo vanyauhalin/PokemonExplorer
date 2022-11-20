@@ -3,7 +3,7 @@ import Foundation
 /// Service for interaction with `/growth-rate` endpoint.
 public struct GrowthRateService: RestService {
   public let baseUrl = "https://pokeapi.co/api/v2"
-  public let path = "/growth-rate/{id,name}/{limit,offset}"
+  public let path = "/growth-rate/{id,name}/{?limit,offset}"
   public let session: URLSession
 
   /// Get a `GrowthRate`.

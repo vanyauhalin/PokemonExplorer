@@ -3,7 +3,7 @@ import Foundation
 /// Service for interaction with `/machine` endpoint.
 public struct MachineService: RestService {
   public let baseUrl = "https://pokeapi.co/api/v2"
-  public let path = "/machine/{id}/{limit,offset}"
+  public let path = "/machine/{id}/{?limit,offset}"
   public let session: URLSession
 
   /// Get a `Machine`.

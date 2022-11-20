@@ -3,7 +3,7 @@ import Foundation
 /// Service for interaction with `/pal-park-area` endpoint.
 public struct PalParkAreaService: RestService {
   public let baseUrl = "https://pokeapi.co/api/v2"
-  public let path = "/pal-park-area/{id,name}/{limit,offset}"
+  public let path = "/pal-park-area/{id,name}/{?limit,offset}"
   public let session: URLSession
 
   /// Get a `PalParkArea`.

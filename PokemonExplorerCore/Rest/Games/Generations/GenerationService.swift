@@ -3,7 +3,7 @@ import Foundation
 /// Service for interaction with `/generation` endpoint.
 public struct GenerationService: RestService {
   public let baseUrl = "https://pokeapi.co/api/v2"
-  public let path = "/generation/{id,name}/{limit,offset}"
+  public let path = "/generation/{id,name}/{?limit,offset}"
   public let session: URLSession
 
   /// Get a `Generation`.

@@ -3,7 +3,7 @@ import Foundation
 /// Service for interaction with `/egg-group` endpoint.
 public struct EggGroupService: RestService {
   public let baseUrl = "https://pokeapi.co/api/v2"
-  public let path = "/egg-group/{id,name}/{limit,offset}"
+  public let path = "/egg-group/{id,name}/{?limit,offset}"
   public let session: URLSession
 
   /// Get a `EggGroup`.

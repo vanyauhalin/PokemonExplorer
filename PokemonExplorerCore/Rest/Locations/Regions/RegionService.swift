@@ -3,7 +3,7 @@ import Foundation
 /// Service for interaction with `/region` endpoint.
 public struct RegionService: RestService {
   public let baseUrl = "https://pokeapi.co/api/v2"
-  public let path = "/region/{id,name}/{limit,offset}"
+  public let path = "/region/{id,name}/{?limit,offset}"
   public let session: URLSession
 
   /// Get a `Region`.

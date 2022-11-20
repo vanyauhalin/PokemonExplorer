@@ -3,7 +3,7 @@ import Foundation
 /// Service for interaction with `/stat` endpoint.
 public struct StatService: RestService {
   public let baseUrl = "https://pokeapi.co/api/v2"
-  public let path = "/stat/{id,name}/{limit,offset}"
+  public let path = "/stat/{id,name}/{?limit,offset}"
   public let session: URLSession
 
   /// Get a `Stat`.

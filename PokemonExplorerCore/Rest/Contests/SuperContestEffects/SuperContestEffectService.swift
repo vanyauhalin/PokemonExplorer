@@ -3,7 +3,7 @@ import Foundation
 /// Service for interaction with `/super-contest-effect` endpoint.
 public struct SuperContestEffectService: RestService {
   public let baseUrl = "https://pokeapi.co/api/v2"
-  public let path = "/super-contest-effect/{id}/{limit,offset}"
+  public let path = "/super-contest-effect/{id}/{?limit,offset}"
   public let session: URLSession
 
   /// Get a `SuperContestEffect`.

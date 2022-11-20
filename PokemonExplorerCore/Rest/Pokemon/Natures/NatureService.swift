@@ -3,7 +3,7 @@ import Foundation
 /// Service for interaction with `/nature` endpoint.
 public struct NatureService: RestService {
   public let baseUrl = "https://pokeapi.co/api/v2"
-  public let path = "/nature/{id,name}/{limit,offset}"
+  public let path = "/nature/{id,name}/{?limit,offset}"
   public let session: URLSession
 
   /// Get a `Nature`.

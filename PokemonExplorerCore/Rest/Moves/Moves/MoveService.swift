@@ -3,7 +3,7 @@ import Foundation
 /// Service for interaction with `/move` endpoint.
 public struct MoveService: RestService {
   public let baseUrl = "https://pokeapi.co/api/v2"
-  public let path = "/move/{id,name}/{limit,offset}"
+  public let path = "/move/{id,name}/{?limit,offset}"
   public let session: URLSession
 
   /// Get a `Move`.

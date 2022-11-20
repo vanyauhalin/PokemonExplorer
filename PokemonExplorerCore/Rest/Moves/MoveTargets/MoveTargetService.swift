@@ -3,7 +3,7 @@ import Foundation
 /// Service for interaction with `/move-target` endpoint.
 public struct MoveTargetService: RestService {
   public let baseUrl = "https://pokeapi.co/api/v2"
-  public let path = "/move-target/{id,name}/{limit,offset}"
+  public let path = "/move-target/{id,name}/{?limit,offset}"
   public let session: URLSession
 
   /// Get a `MoveTarget`.
