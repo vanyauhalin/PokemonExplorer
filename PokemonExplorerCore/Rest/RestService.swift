@@ -20,4 +20,18 @@ extension RestService {
     let (data, _) = try await session.data(for: request)
     return try RestServiceDefaults.decoder.decode(Entity.self, from: data)
   }
+
+  func get<ParameterValue>(
+    parameters: RestEndpoint.Parameters<ParameterValue>,
+    mediaType: MediaType
+  ) async throws -> Data {
+    let endpoint = RestEndpoint.apply(parameters: parameters, to: path)
+    let url = try RestServiceDefaults.createUrl(
+      baseUrl: baseUrl,
+      path: endpoint.replacingOccurrences(of: "/.png", with: ".png")
+    )
+    let request = RestServiceDefaults.createRequest(url: url, httpMethod: .get)
+    let (data, _) = try await session.data(for: request)
+    return data
+  }
 }

@@ -23,6 +23,8 @@ public struct Rest {
     = MovesServices(session: session)
   public lazy private(set) var pokemon
     = PokemonServices(session: session)
+  public lazy private(set) var sprites
+    = SpritesService(session: session)
   public lazy private(set) var utility
     = UtilityServices(session: session)
 
