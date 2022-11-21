@@ -1,29 +1,31 @@
+import RealmSwift
+
 /// `PokemonSprites`.
 ///
 /// Up-to-date documentation can be found one the
 /// [website](https://pokeapi.co/docs/v2#pokemonsprites).
-public struct PokemonSprites: Codable {
+public class PokemonSprites: Object, ObjectKeyIdentifiable, Codable {
   /// The default depiction of this Pokémon from the front in battle.
-  public let frontDefault: String
+  @Persisted public var frontDefault: String
 
   /// The shiny depiction of this Pokémon from the front in battle.
-  public let frontShiny: String
+  @Persisted public var frontShiny: String
 
   /// The female depiction of this Pokémon from the front in battle.
-  public let frontFemale: String?
+  @Persisted public var frontFemale: String?
 
   /// The shiny female depiction of this Pokémon from the front in battle.
-  public let frontShinyFemale: String?
+  @Persisted public var frontShinyFemale: String?
 
   /// The default depiction of this Pokémon from the back in battle.
-  public let backDefault: String
+  @Persisted public var backDefault: String
 
   /// The shiny depiction of this Pokémon from the back in battle.
-  public let backShiny: String
+  @Persisted public var backShiny: String
 
   /// The female depiction of this Pokémon from the back in battle.
-  public let backFemale: String?
+  @Persisted public var backFemale: String?
 
   /// The shiny female depiction of this Pokémon from the back in battle.
-  public let backShinyFemale: String?
+  @Persisted public var backShinyFemale: String?
 }

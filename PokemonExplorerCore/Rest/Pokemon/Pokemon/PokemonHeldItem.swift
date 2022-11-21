@@ -2,10 +2,10 @@
 ///
 /// Up-to-date documentation can be found one the
 /// [website](https://pokeapi.co/docs/v2#pokemonhelditem).
-public struct PokemonHeldItem: Codable {
+public class PokemonHeldItem: Codable {
   /// The item the referenced Pokémon holds.
-  public let item: NamedAPIResource<Item>
+  public var item: NamedAPIResource<Item>?
 
   /// The details of the different versions in which the item is held.
-  public let versionDetails: [PokemonHeldItemVersion]
+  public var versionDetails: [PokemonHeldItemVersion]
 }

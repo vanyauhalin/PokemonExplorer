@@ -1,10 +1,15 @@
+import RealmSwift
+
+public class NameLanguage: NamedAPIResource<Language> {}
+
 /// `Name`.
 ///
 /// Up-to-date documentation can be found one the
 /// [website](https://pokeapi.co/docs/v2#name).
-public struct Name: Codable {
+public class Name: Object, ObjectKeyIdentifiable, Codable {
   /// The localized name for an API resource in a specific language.
-  public let name: String
+  @Persisted public var name: String
+
   // /// The language this name is in.
-  public let language: NamedAPIResource<Language>
+  @Persisted public var language: NameLanguage?
 }

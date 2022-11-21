@@ -2,13 +2,13 @@
 ///
 /// Up-to-date documentation can be found one the
 /// [website](https://pokeapi.co/docs/v2#pokemonmoveversion).
-public struct PokemonMoveVersion: Codable {
+public class PokemonMoveVersion: Codable {
   /// The method by which the move is learned.
-  public let moveLearnMethod: NamedAPIResource<MoveLearnMethod>
+  public var moveLearnMethod: NamedAPIResource<MoveLearnMethod>?
 
   /// The version group in which the move is learned.
-  public let versionGroup: NamedAPIResource<VersionGroup>
+  public var versionGroup: NamedAPIResource<VersionGroup>?
 
   /// The minimum level to learn the move.
-  public let levelLearnedAt: Int
+  public var levelLearnedAt: Int
 }
