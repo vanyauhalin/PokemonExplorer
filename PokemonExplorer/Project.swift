@@ -15,6 +15,12 @@ let project = Project(
       sources: .configure(),
       scripts: [
         .lintProject()
+      ],
+      dependencies: [
+        .project(
+          target: .name(by: "Core"),
+          path: .relativeToRoot(.name(by: "Core"))
+        )
       ]
     )
   ]
