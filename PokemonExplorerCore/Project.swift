@@ -4,6 +4,12 @@ import ProjectDescriptionHelpers
 let project = Project(
   name: .name(by: "Core"),
   organizationName: .organizationName(),
+  packages: [
+    .remote(
+      url: "https://github.com/realm/realm-swift",
+      requirement: .branch("master")
+    )
+  ],
   targets: [
     Target(
       name: .name(by: "Core"),
@@ -15,6 +21,9 @@ let project = Project(
       sources: .configure(),
       scripts: [
         .lintProject(by: "Core")
+      ],
+      dependencies: [
+        .package(product: "RealmSwift")
       ]
     )
   ]
